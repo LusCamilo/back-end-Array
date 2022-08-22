@@ -9,7 +9,7 @@ const listaProd = [
     50.00,
     10
 ]
-const listAlunos = ['Eduardo', 'Toninho' , 'Heitor' ,'Melissa', 'Leozinhoooo']
+const listAlunos = ['Eduardo', 'Toninho' , 'Heitor' ,'Melissa', 'ana', 'perucci', 'Leozinhoooo']
 //exibindo cada dado do array
 console.log(lista)
 
@@ -47,5 +47,45 @@ listAlunos.forEach(function(item) {
 for (const item of listAlunos) {
     console.log('\n o aluno da turma DS2M e: ' + item)
 }
+console.log('\n********************************\n')
+
 listAlunos.push('arthur', 'lidia', 'isabelle')
+
 console.log(listAlunos)
+listAlunos.pop()
+
+console.log('\n********************************\n')
+
+listAlunos.unshift('enzo')
+console.log(listAlunos)
+
+console.log('\n********************************\n')
+
+listAlunos.shift()
+console.log(listAlunos)
+
+console.log('\n********************************\n')
+
+// let indice = listAlunos.indexOf('ana')
+// console.log(indice)
+
+console.log('\n********************************\n')
+
+// listAlunos.splice(indice)
+// console.log(listAlunos)
+
+console.log('\n********************************\n')
+
+const listaNovosAlunos = listAlunos.slice()
+console.log(listaNovosAlunos)
+
+console.log('\n********************************\n')
+
+// splice == retira todos intens abaxi daquela posicao
+// slice == copia uma estrutura de array em outra variavel
+// forEach == varre toda a lista
+// push == adiciona mais elementos
+// pop == remove o ultimo elemento da lista
+// unshift == adiciona ao primeiro lugar da lista um elemento
+// indexOf == diz em que posicao o elemento esta
+// length == lista quantas elementos tem na llista
