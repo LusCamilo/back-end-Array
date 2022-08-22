@@ -1,8 +1,4 @@
-const lista = [
-    'josé', 
-    'maria', 
-    'carlos'
-]
+
 const listaProd = [
     'teclado',
     'branco',
@@ -10,9 +6,13 @@ const listaProd = [
     10
 ]
 const listAlunos = ['Eduardo', 'Toninho' , 'Heitor' ,'Melissa', 'ana', 'perucci', 'Leozinhoooo']
-//exibindo cada dado do array
-console.log(lista)
 
+const listaDisciplina = [
+    'PWBE',
+    'PWFE',
+    'DB',
+    'DM'
+]
 //exibindo o tipo de dado 
 console.log(typeof(listaProd[3]))
 
@@ -81,6 +81,19 @@ console.log(listaNovosAlunos)
 
 console.log('\n********************************\n')
 
+listaNovosAlunos.push(listaDisciplina)
+console.log(listaNovosAlunos)
+
+console.log('\n********************************\n')
+let indice = listaNovosAlunos.indexOf(listaDisciplina)
+console.log(listaNovosAlunos[indice].indexOf('DB'))
+
+console.log('\n********************************\n')
+
+console.log('\n********************************\n')
+
+
+
 // splice == retira todos intens abaxi daquela posicao
 // slice == copia uma estrutura de array em outra variavel
 // forEach == varre toda a lista
@@ -89,3 +102,4 @@ console.log('\n********************************\n')
 // unshift == adiciona ao primeiro lugar da lista um elemento
 // indexOf == diz em que posicao o elemento esta
 // length == lista quantas elementos tem na llista
+//typeof == ediz de que tipo cada elemento é
