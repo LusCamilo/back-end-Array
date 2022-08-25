@@ -94,7 +94,32 @@ console.log('\n********************************\n')
 
 
 
-// splice == retira todos intens abaxi daquela posicao
+console.log('\n*********************************Trabalhando com JSON******************************\n')
+
+const listaContatos = {
+
+    nome: 'jose da silva',
+    telefone: '11 1234-5678',
+    email: 'jose.silva@gmail.com'
+}
+
+console.log(listaContatos)
+
+console.log('\nnome do contato: ' + listaContatos.nome + '\nO email cadastrado é:' + listaContatos.email + '\ntelefone de contato: ' + listaContatos.telefone)
+
+listaContatos.celular = '987654321'
+
+console.log(listaContatos)
+
+delete(listaContatos.telefone)
+
+console.log(listaContatos)
+
+listaContatos.nome = 'maria lurdes'
+
+
+console.log(listaContatos)
+// splice == retira todos itens abaixo daquela posicao
 // slice == copia uma estrutura de array em outra variavel
 // forEach == varre toda a lista
 // push == adiciona mais elementos
