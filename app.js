@@ -96,29 +96,47 @@ console.log('\n********************************\n')
 
 console.log('\n*********************************Trabalhando com JSON******************************\n')
 
-const listaContatos = {
+const rep = 0
+
+
+const listaContatos = [{
 
     nome: 'jose da silva',
     telefone: '11 1234-5678',
-    email: 'jose.silva@gmail.com'
-}
+    email: 'jose.silva@gmail.com',
+    carro: [
+        {
+            placa: 'abc-0666',
+            modelo: 'corsa',
+            cor: 'prata'
+        },{
+            placa: 'def-0777',
+            modelo: 'fusca',
+            cor: 'azul'
+        }
+    ]
 
-console.log(listaContatos)
+},{
 
-console.log('\nnome do contato: ' + listaContatos.nome + '\nO email cadastrado é:' + listaContatos.email + '\ntelefone de contato: ' + listaContatos.telefone)
+    nome: 'maria joaquina',
+    telefone: '11 1458-8764',
+    email: 'maria.joaquina@gmail.com'
 
-listaContatos.celular = '987654321'
-
-console.log(listaContatos)
-
-delete(listaContatos.telefone)
-
-console.log(listaContatos)
-
-listaContatos.nome = 'maria lurdes'
+}]
 
 
-console.log(listaContatos)
+
+
+
+
+listaContatos[1].telefone = '11 8765-4321'
+
+
+console.log('\nnome do contato: ' + listaContatos[rep].nome + '\nO email cadastrado é:' + listaContatos[rep].email + '\ntelefone de contato: ' + listaContatos[rep].telefone)
+
+console.log(listaContatos[0].carro[0].placa)
+
+
 // splice == retira todos itens abaixo daquela posicao
 // slice == copia uma estrutura de array em outra variavel
 // forEach == varre toda a lista
